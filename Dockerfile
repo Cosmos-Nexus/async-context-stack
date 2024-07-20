@@ -1,4 +1,4 @@
-FROM python:3.10.6 as builder
+FROM python:3.11 as builder
 
 ENV PATH="/root/.local/bin:${PATH}"
 
@@ -13,7 +13,7 @@ WORKDIR /venv/
 
 RUN poetry install
 
-FROM python:3.10.6
+FROM python:3.11
 
 LABEL version="0.1.0"
 LABEL author="Chris Lee"

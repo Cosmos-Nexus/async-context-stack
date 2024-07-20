@@ -4,8 +4,11 @@ version = "0.1.0"
 description = "Async context manager for nesting async context stacks"
 authors = ["Chris Lee <chris@cosmosnexus.co>"]
 
+[[tool.poetry.packages]]
+include = "actxstack"
+
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.7"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -14,6 +17,7 @@ ipdb = "^0.13.13"
 mypy = "^1.11.0"
 ruff = "^0.5.4"
 pytest-cov = "^5.0.0"
+pytest-asyncio = "^0.23.8"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
