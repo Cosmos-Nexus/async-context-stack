@@ -1,6 +1,6 @@
-[![PyPI version](https://badge.fury.io/py/AsyncContextStack.svg)](https://badge.fury.io/py/AsyncContextStack)
+[![PyPI version](https://img.shields.io/pypi/v/AsyncContextStack)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/AsyncContextStack)
-![Tests](https://github.com/github/docs/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/Cosmos-Nexus/async-context-stack/actions/workflows/tests.yml/badge.svg)
 
 # AsyncContextStack
 
