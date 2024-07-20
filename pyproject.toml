@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "AsyncContextStack"
-version = "0.2.0"
+version = "0.2.1"
 description = "Async context manager for nesting async context stacks"
 authors = ["Chris Lee <chris@cosmosnexus.co>"]
 
@@ -10,14 +10,9 @@ include = "asynccontextstack"
 [tool.poetry.dependencies]
 python = "^3.8"
 
-
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.3.1"
-ipdb = "^0.13.13"
-mypy = "^1.11.0"
-ruff = "^0.5.4"
-pytest-cov = "^5.0.0"
-pytest-asyncio = "^0.23.8"
+pytest = "^8"
+pytest-asyncio = "^0"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
@@ -41,7 +36,7 @@ line-length = 88
 select = ["B", "ASYNC", "I"]
 
 [tool.mypy]
-files = ["actxstack/"]
+files = ["asynccontextstack/"]
 exclude = ["^tests/"]
 python_executable = ".venv/bin/python"
 ignore_missing_imports = true
