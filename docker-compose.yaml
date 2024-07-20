@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  actxstack:
+    build: .
+    container_name: actxstack
+    env_file: .env
+    tty: true
+    entrypoint: bash
+    volumes:
+      - .:/actxstack
