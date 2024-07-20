@@ -1,8 +1,8 @@
-name: Main Testing
+name: Commit Testing
 
 on:
   push:
-    branches:
+    branches-ignore:
       - main
 
 jobs:
