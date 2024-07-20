@@ -8,7 +8,7 @@ authors = ["Chris Lee <chris@cosmosnexus.co>"]
 include = "actxstack"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 
 
 [tool.poetry.group.dev.dependencies]
