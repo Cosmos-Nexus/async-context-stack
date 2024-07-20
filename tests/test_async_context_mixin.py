@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from unittest.mock import MagicMock
 
-from actxstack import AsyncContextMixin
+from asynccontextstack import AsyncContextMixin
 
 
 async def test_async_context_mixin_no_contexts():
