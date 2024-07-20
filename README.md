@@ -1,3 +1,7 @@
+[![PyPI version](https://badge.fury.io/py/AsyncContextStack.svg)](https://badge.fury.io/py/AsyncContextStack)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/AsyncContextStack)
+![Tests](https://github.com/github/docs/actions/workflows/tests.yml/badge.svg)
+
 # AsyncContextStack
 
 Async context manager for nesting async context stacks
