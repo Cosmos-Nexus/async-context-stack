@@ -8,8 +8,10 @@ async def test_async_context_mixin_no_contexts():
     class MockAsyncContextClass(AsyncContextMixin):
         pass
 
-    async with MockAsyncContextClass() as ctx:
-        assert ctx == []
+    my_cm = MockAsyncContextClass()
+    async with my_cm as ctx:
+        assert my_cm is ctx
+        assert ctx.async_entered_contexts == []
 
 
 async def test_async_context_mixin_with_contexts():
@@ -28,8 +30,10 @@ async def test_async_context_mixin_with_contexts():
         def async_contexts(self):
             return [mock_manager()]
 
-    async with MockAsyncContextClass() as ctx:
-        assert ctx == [mock_1]
+    my_cm = MockAsyncContextClass()
+    async with my_cm as ctx:
+        assert ctx is my_cm
+        assert ctx.async_entered_contexts == [mock_1]
 
     pre_mock.assert_called_once()
     post_mock.assert_called_once()

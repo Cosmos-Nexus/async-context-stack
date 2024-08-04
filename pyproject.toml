@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "AsyncContextStack"
-version = "0.2.1"
+version = "1.0.0"
 description = "Async context manager for nesting async context stacks"
 authors = ["Chris Lee <chris@cosmosnexus.co>"]
 
